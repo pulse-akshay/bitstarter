@@ -2,9 +2,10 @@ var express = require('express');
 var fs = require('fs');
 
 //read the fild and get the strings
-var buffer = fs.readFileSync(index.html);
+var buffer = fs.readFileSync('index.html');
 
-var text = buffer.toString("utf-8");
+
+var text = buffer.toString();
 
 var app = express.createServer(express.logger());
 

@@ -10,8 +10,8 @@
   <link rel="stylesheet" href="httpS://D396qusza40orc.cloudfront.net/startup%2Fcode%2Fbootstrap-2.3.2.css">
   <link rel="stylesheet" href="http://netdna.bootstrapcdn.com/font-awesome/3.0.2/css/font-awesome.css">
   <link rel="stylesheet" href="https://d396qusza40orc.cloudfront.net/startup%2Fcode%2Fsocial-buttons.css">
-  <script src="https://d396qusza40orc.cloudfron.net/startup%2Fcode%2Fjquery.js"></script>
-  <script src="https://d396qusza40orc.cloudfront.net/startup%2F%2Fbootstrap.js"></script>
+  <script type="text/javascript" src="https://d396qusza40orc.cloudfron.net/startup%2Fcode%2Fjquery.js"></script>
+  <script type="text/javascript" src="https://d396qusza40orc.cloudfront.net/startup%2F%2Fbootstrap.js"></script>
   <link href="http://fonts.googleapis.com/css?family=Ubuntu:300,400,500,700,300italic,400italic,500italic,700italic" rel="stylesheet" type="text/css">
   <link href="http://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,300,400,600,700,800" rel="stylesheet" type="text/css">
   <style type="text/css">
@@ -23,7 +23,7 @@
     @media (min-width:980px)
     {
     body {
-    padding-top:60x;
+    padding-top:60px;
     }
     .linediv-l{
     border-right: 1px white solid;
@@ -134,9 +134,9 @@
 <!-- We use row-flud inside container to achieve a resiazable layout .-->
 <!-- blogs.enjin.com/201304/tips-forimplemnting-responsiv-design-suing-bootstrap/ -->
 <!-- http://stackoverflow.com/a/12270322 -->
-<p></p>
-<p></p>
-<p></p>
+
+
+
 <div class="container">
   <!--Font and paired font of .heading. /subheading and boddy from Goole fonts -->
   <!-- www.google.com/fonts/specimer/Ubuntu -->
@@ -155,13 +155,14 @@
   </div>
   <div class="row-fluid pitch">
     <div class="span5 offset1 video">
-      <img class="img-polaroid" src="http://placehold.it/480x300">
+      <img class="img-polaroid" alt="Placeholder" src="http://placehold.it/480x300">
     </div>
 
     <!-- We define a new action div to contain statistics , order and hsare buttons -->
     <div class="span5 actions">
+      <div class="row-fluid">
       <div class="span8 offset2">
-	<div class="statistics">
+	<div class="row-fluid statistics">
 	  <div class="span4">
 	    <!--linediv-l and liendiv-r give dividing lines that look different in horizontal and vertical layouts, illustrating medeia quireies -->
 	    <div class="linediv-l">
@@ -170,7 +171,7 @@
 	    </div>
 	  <div class="span4">
 	    <div class="linediv-c">
-	      <h3>$6000<h3> <p> of $ 10,000 </p>
+	      <h3>$6000</h3> <p> of $ 10,000 </p>
 	    </div>
 	    </div>
 	  <div class="span4">
@@ -180,6 +181,8 @@
 	    </div>
 	  </div>
 	</div>
+      </div>
+      <div class="row-fluid">
       <div class="span10 offset1">
 	<!-- Bootstrapp progressb bar -->
 	<!-- http://twitter.github.oi/bootstrap/components.html#progress -->
@@ -188,11 +191,15 @@
 	  <div class="bar bar-warning" style="width: 40%;"></div>
 	</div>
       </div>
-      <div class="span6 offset3 order">
+      </div>
+    <div class="rol-fluid">
+    <div class="span6 offset3 order">
 	<!-- Standar Bootstrap button -->
 	<!--11 http://tweitter.github.io/bootstratp/base-css/html#buttons -->
 	    <button class="btn btn-success btn-large">Preorder</button>
       </div>
+    </div>
+    <div class="row-fluid">
       <div class="span8 offset2 social">
 	<!--Socaila buttons are notinlucded inthe dfault bootstratp -->
 	<!-- See: http://noizwaves.github.io/bootstrap-social-buttons -->
@@ -200,6 +207,9 @@
 	<button class="btn btn-facebook"><i class="icon-facebook"></i> | FAcebook</button>
 	</div>
       </div>
+  </div>
+</div>
+
 
 <!-- Beyond this part marketin copy begins -->
 <!-- https://developer.mozilla.org/en-US/docs/Web/CSS/text-algn -->
@@ -207,25 +217,25 @@
 <!-- http://placehold.it -->
 <div class="row-fluid section1">
   <div class="span5 offset1 asset">
-    <img class="img-polaroid" src+"http://placehold.it/480x300">
-    </div>
+    <img class="img-polaroid" src="http://placehold.it/480x300">
+  </div>
   <div class="span5 copy">
     <p>
       How about a friend in the kitchen who works  with you to create that wonderful dish for your next big celebration, Interactive Rcepies brings you recepies which interact with you from start to finish. It responds to your requests as a friend wouldThis will make cooking a fun and learning experience. If you have a question on the ingredient, all you need to do is a\. Suppose you are out of ginger, all you need to ask is "what can i use in place of ginger" and the answer will be ready for your. Or, if you are done chopping just say - "I am done chopping, what's next" and the next step will be read out to you. This will make cooking a fun and learning experience. If you have a question on the ingredient, all you need to do is ask.       
     </p>
-    </div>
   </div>
+</div>
 
 <div class="row-fluid section2">
   <div class="span5 offset1 copy copy-right">
     <p>
       So go on explore your creative side. Create that favorite dish.    
       </p>
-    </div>
+  </div>
   <div class="span5 asset">
     <img class="img-plaroid" src="http://placehold.it/480x300">
-    </div>
   </div>
+</div>
 
 <!--For the FAQ , we introduce a little bit of JS, using the accodion -->
 <!-- This bring in jquery.js and boostratp.js as depndencies -->
@@ -250,11 +260,11 @@
       <div id="collapseTwo" class="accodion-body collapse">
 	<div class="accordion-inner">
 	  A question which is commonly asked by users.
-	  </div>
 	</div>
       </div>
     </div>
   </div>
+</div>
 </div>
 
 <!-- Not crucial but we put this under a CC by-sa 3.0 license -->
